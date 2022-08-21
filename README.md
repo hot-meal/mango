@@ -8,18 +8,17 @@ A tiny js templating framework. ~400 bytes gzipped
 
 ### Features
  * Basic interpolation: 
-   * `{{=value}}`
+  ```{{=value}}```
  * Unclean interpolation: 
-   * `{{%unsafe_value}}`
+  ```{{%unsafe_value}}```
  * Variable expansion: 
-   * `{{=User.account.number}}`
+  ```{{=User.account.number}}```
  * If..else: 
-   * `{{value}} <<markup>> {{:value}} <<alternate markup>> {{/value}}`
+  ```{{value}} <<markup>> {{:value}} <<alternate markup>> {{/value}}```
  * If falsy: 
-   * `{{!value}} <<markup>> {{/!value}}`
+  ```{{!value}} <<markup>> {{/!value}}```
  * Iteration: 
-   * `{{@object_value}} {{=_key}}:{{=_val}} {{/@object_value}}`
- 
+  ```{{@object_value}} {{=_key}}:{{=_val}} {{/@object_value}}```
  
  - Supports multi-line templates (no need to remove newlines)
  - Use and render the same template multiple times with different data
