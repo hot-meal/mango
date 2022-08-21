@@ -4,7 +4,7 @@
 
 # mango.js
 
-A tiny templating framework. ~400 bytes gzipped
+A tiny js templating framework. ~400 bytes gzipped
 
 ### Features
  * Basic interpolation: 
@@ -23,11 +23,11 @@ A tiny templating framework. ~400 bytes gzipped
  
  - Supports multi-line templates (no need to remove newlines)
  - Use and render the same template multiple times with different data
- * Works in all browsers
+ - Works in all browsers
 
-### Usage
+### Demo
 
 ```javascript
-	let myTemplate = new mango("<div>Hello {{=name}}</div>");
-	document.body.innerHtml = myTemplate.render({name: "Mango!"});
+let myTemplate = new mango("<div>Hello {{=name}}</div>");
+document.body.innerHtml = myTemplate.render({name: "Mango!"});
 ```
